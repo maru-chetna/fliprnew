@@ -18,10 +18,11 @@ router.delete("/deleteproduct/:productId" , deleteProduct);
 router.get("/products", getAllProducts);
 
 //cart related 
-router.post("/add", addToCart);  // Add product to cart
-router.patch("/update", updateCart);  // Update product quantity in cart
-router.delete("/delete", deleteFromCart);  // Delete product from cart
+router.post("/card/add", addToCart);  // Add product to cart
+router.patch("/card/update", updateCart);  // Update product quantity in cart
+router.delete("/card/delete", deleteFromCart);  // Delete product from cart
 router.get("/", getCart);  // Get all products in cart
+
 
 
 //order management 
